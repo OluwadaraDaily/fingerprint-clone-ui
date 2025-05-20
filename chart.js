@@ -20,7 +20,7 @@ const accuracyChart = new Chart(ctx, {
             {
                 label: 'Competitors',
                 data: [95, 96, 94, 95, 70, 60, 58, 59, 57, 56, 55, 54, 53], // earlier drop at 40
-                borderColor: '#CAE2E4',
+                borderColor: '#F84960',
                 backgroundColor: 'rgba(107,107,255,0.05)',
                 tension: 0.4,
                 borderWidth: 1,
@@ -65,12 +65,12 @@ const accuracyChart = new Chart(ctx, {
                         let value = context.parsed.y;
                         let base = context.dataset.data[0];
                         let percent = ((value - base) / base * 100).toFixed(1);
-                        let color = context.dataset.label === 'Fingerprint' ? '#F84960' : '#4B6AFF';
+                        let color = context.dataset.label === 'Spotter AI' ? '#008080' : '#F84960';
                         let sign = percent > 0 ? '+' : '';
                         return ` ${context.dataset.label}  %c${sign}${percent}%`;
                     },
                     labelTextColor: function(context) {
-                        return context.dataset.label === 'Fingerprint' ? '#F84960' : '#4B6AFF';
+                        return context.dataset.label === 'Spotter AI' ? '#008080' : '#F84960';
                     },
                     labelTextStyle: function(context) {
                         return {

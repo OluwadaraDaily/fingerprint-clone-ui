@@ -6,11 +6,11 @@ const accuracyChart = new Chart(ctx, {
         datasets: [
             {
                 label: 'Spotter AI',
-                data: [100, 99, 98, 97, 97, 96, 95, 95, 94, 94, 93, 93, 92],
+                data: [100, 99, 100, 98, 101, 97, 99, 96, 98, 97, 99, 98, 100],
                 borderColor: '#008080',
                 backgroundColor: 'rgba(255,107,53,0.05)',
                 tension: 0.4,
-                borderWidth: 2,
+                borderWidth: 1,
                 pointRadius: 0,
                 pointHoverRadius: 7,
                 pointHoverBackgroundColor: '#fff',
@@ -19,11 +19,11 @@ const accuracyChart = new Chart(ctx, {
             },
             {
                 label: 'Competitors',
-                data: [95, 94, 93, 92, 90, 85, 80, 75, 70, 65, 60, 55, 50], // starts lower
+                data: [95, 96, 94, 95, 70, 60, 58, 59, 57, 56, 55, 54, 53], // earlier drop at 40
                 borderColor: '#CAE2E4',
                 backgroundColor: 'rgba(107,107,255,0.05)',
                 tension: 0.4,
-                borderWidth: 2,
+                borderWidth: 1,
                 pointRadius: 0,
                 pointHoverRadius: 7,
                 pointHoverBackgroundColor: '#fff',
